@@ -27,16 +27,16 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "\n",
     "class SavingsAccount (Account) :\n",
     "    \n",
     "    def Interest (Account) :\n",
-    "        return Account.balance * (1/10)"
+    "        return Account.balance * (1/10)\n",
+    "        "
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 4,
    "metadata": {},
    "outputs": [
     {
@@ -48,6 +48,7 @@
       " Account Balance :  4000\n",
       " Account Balance After Deposit :  4500\n",
       "Account Balance After Wihtdraw : 3800\n",
+      "New Balance :  3800\n",
       "Bank Interest :  380.0\n"
      ]
     }
@@ -62,6 +63,7 @@
     "print(\" Account Balance After Deposit : \", user1.balance )\n",
     "user1.withdraw_money(700)\n",
     "print(\"Account Balance After Wihtdraw :\" , user1.balance)\n",
+    "print(\"New Balance : \", user1.balance)\n",
     "print(\"Bank Interest : \", user1.Interest())"
    ]
   },
